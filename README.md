@@ -16,4 +16,7 @@
 
 
 ## /etc/sudoers
-- ...
+```
+bot    ALL=(root) NOPASSWD: /home/bot/slack_bot/sbin/
+```
+
