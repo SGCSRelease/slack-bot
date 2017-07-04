@@ -16,6 +16,7 @@ for target in sys.argv[1:]:
         targets.append(target_rule)
 
 hosts_deny_list.extend(targets)
+hosts_deny_list.append('')  # XXX: SSH BLOCKER: need to add new line at the end.
 
 hosts_deny = open('/etc/hosts.deny', 'w')
 hosts_deny.write('\n'.join(hosts_deny_list))
