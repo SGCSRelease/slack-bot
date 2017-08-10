@@ -11,8 +11,7 @@
 
 
 ## Run
-- `cd bot`
-- `FLASK_APP=app.py flask run -h 0.0.0.0 --debugger --reload`
+- `FLASK_APP=bot/app.py flask run -h 0.0.0.0 --debugger --reload`
 
 ```
  * Serving Flask app "bot.app"
