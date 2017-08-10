@@ -2,7 +2,7 @@ import subprocess
 
 from ..app import slack
 
-@slack.command('etc/hosts.allow', token='',
+@slack.command('etc/hosts.allow', token='DY5Qkf3BHaukpKWOBxsfjpB2',
         team_id='T3QDD12QK', methods=['POST'])
 def allow(**kwargs):
     target = kwargs.get('text')
