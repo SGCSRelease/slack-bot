@@ -11,7 +11,7 @@ slack = Slack(app)
 
 # XXX: commands/*.py import automatically.
 for _, command, _ in pkgutil.walk_packages('.'):
-    if command.startswith('bot.command'):
+    if command.startswith('bot.commands.'):
         print('%s load' % (command,))
         importlib.import_module(command)
 
